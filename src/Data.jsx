@@ -15,7 +15,7 @@ export default [
     id:2,
     image: {
         thumbnail: "../src/assets/images/image-creme-brulee-thumbnail.jpg",
-        mobile: "../src/assets/images/image-creme-brulee-mobile.jpg",
+        mobile: "../assets/images/image-creme-brulee-mobile.jpg",
         tablet: "./assets/images/image-creme-brulee-tablet.jpg",
        desktop: "../src/assets/images/image-creme-brulee-desktop.jpg"
     },
