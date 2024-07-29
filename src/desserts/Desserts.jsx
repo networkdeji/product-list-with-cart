@@ -28,7 +28,8 @@ export default function Desserts({selected, setSelected, count, setCount}){
                         className="items">
 
                         <div 
-                            style={{backgroundImage:`url(${mainWidth > 470 ? item.image.desktop : item.image.mobile})`, objectFit:'cover', backgroundSize:'100%',backgroundRepeat:'no-repeat'}}
+                            // style={{backgroundImage:`url(${mainWidth > 470 ? item.image.desktop : item.image.mobile})`, objectFit:'cover', backgroundSize:'100%',backgroundRepeat:'no-repeat'}}
+                            style={{backgroundImage:`url(${item.image.desktop })`, objectFit:'cover', backgroundSize:'100%',backgroundRepeat:'no-repeat'}}
                             className="dessert__select">
                             
                         </div>
