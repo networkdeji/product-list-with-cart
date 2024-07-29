@@ -1,0 +1,201 @@
+.desserts__container{
+    display: grid;
+    /* border: 1px solid red; */
+    grid-template-columns:  repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.items{
+    background-color: hsl(20, 50%, 98%);
+    height: 200px;
+    width: 13rem;
+    /* border: 1px solid green; */
+    margin-bottom: 7rem;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.dessert__select{
+    border-radius: 0.5rem;
+    height: 18rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  position: absolute
+}
+
+.dessert__select:hover, .dessert__btn:hover{
+    cursor: pointer;
+    border: 1px solid  hsl(14, 86%, 42%);
+}
+
+.sec__des{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: -1.3rem;
+    margin-top: -50px;
+}
+
+.dessert__btn{
+    font-size: 0.7rem;
+    font-weight: 550;
+    color: hsl(14, 65%, 9%);
+    background-color: hsl(20, 50%, 98%);
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid hsl(12, 20%, 44%) ;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+}
+
+.dessert__btn >svg{
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+}
+
+.dessert__info{
+    width: 100%;
+    position: absolute;
+    bottom: -8rem;
+    margin-bottom: 1rem;
+    /* border: 2px solid blue; */
+    height: 80px;
+}
+
+.dessert__info .name{
+    margin-bottom: 0.2rem;
+    color: hsl(7, 20%, 60%) ;
+}
+.dessert__info .category{
+    margin-bottom: 0.2rem;
+    color: hsl(14, 65%, 9%);
+}
+
+.dessert__info .price{
+    font-size: 1rem;
+    color:hsl(14, 63%, 48%);
+}
+
+
+/* For small devices */
+@media screen and (max-width: 470px){
+
+    .desserts__container{
+        display: grid;
+        grid-template-columns:  1fr;
+    }
+    .items{
+        background-color: hsl(20, 50%, 98%);
+        height: 12rem;
+        width: 100%;
+        /* border: 1px solid green; */
+        margin-bottom: 7rem;
+        position: relative;
+        margin-top: 2rem;
+    }
+
+    .dessert__select{
+        border-radius: 1rem;
+        height: 13rem;
+        width: 100%;
+        margin-bottom: 1rem;
+        position: absolute
+    }
+
+    /* active state */
+    .dessert__selected{
+        border-radius: 0.5rem;
+        height: 150px;
+        width: 100%;
+        margin-bottom: 1rem;
+      position: absolute;
+      border: 2px solid  hsl(14, 86%, 42%)
+    }
+
+    .selected{
+        color:  hsl(20, 50%, 98%);
+        background-color:hsl(14, 86%, 42%);
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid hsl(12, 20%, 44%) ;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+    }
+
+    .selected>.bx-plus-circle{
+        color: hsl(20, 50%, 98%);
+        align-self: flex-start;
+        margin-right: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .selected>.bx-minus-circle{
+        color: hsl(20, 50%, 98%);
+        align-self: flex-end;
+        margin-left: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .selected i:hover{
+        cursor: pointer;
+        color: rgb(220, 222, 224);
+    }
+    /* active state */
+    .dessert__select:hover, .dessert__btn:hover{
+        cursor: pointer;
+        border: 1px solid  hsl(14, 86%, 42%);
+    }
+
+    .sec__des{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        bottom: -1.3rem;
+        margin-top: -50px;
+    }
+    
+    .dessert__btn{
+        font-size: 0.7rem;
+        font-weight: 550;
+        color: hsl(14, 65%, 9%);
+        background-color: hsl(20, 50%, 98%);
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid hsl(12, 20%, 44%) ;
+        align-items: center;
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+    }
+
+    .dessert__btn >svg{
+        font-size: 0.8rem;
+        margin-left: 0.3rem;
+    }
+
+    .dessert__info{
+        width: 100%;
+        position: absolute;
+        bottom: -8rem;
+        margin-bottom: 1rem;
+        /* border: 2px solid blue; */
+        height: 80px;
+    }
+
+    .dessert__info .name{
+        margin-bottom: 0.2rem;
+        color: hsl(7, 20%, 60%) ;
+    }
+    .dessert__info .category{
+        margin-bottom: 0.2rem;
+        color: hsl(14, 65%, 9%);
+    }
+
+    .dessert__info .price{
+        font-size: 1rem;
+        color:hsl(14, 63%, 48%);
+    }
+}
