@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import './checkout.css'
-import empty from 'images/illustration-empty-cart.svg'
+import empty from '../../public/images/illustration-empty-cart.svg'
 import Confirmation from "../confirmation/Confirmation"
 
 export default function Checkout({selected, setSelected, count, setCount, setDisplay, setOrder}){

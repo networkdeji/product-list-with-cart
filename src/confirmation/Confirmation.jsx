@@ -1,6 +1,5 @@
 import React, { useEffect } from "react"
 import './confirmation.css'
-import pic from  "../assets/images/image-panna-cotta-thumbnail.jpg"
 
 
 
